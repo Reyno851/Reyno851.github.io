@@ -1,2 +1,27 @@
-<div> GEAR 5 !! </div>
-<img src="./images/luffy_g5.png" alt="luffy_g5"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luffy's Gear Showcase</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1> Luffy's Gear Showcase </h1>
+    <div class="buttons">
+        <button onclick="showImage('luffy_base.png')">Luffy Base</button>
+        <button onclick="showImage('luffy_g2.png')">Luffy Gear 2</button>
+        <button onclick="showImage('luffy_g3.png')">Luffy Gear 3</button>
+        <button onclick="showImage('luffy_g4_poundman.jpg')">Luffy Gear 4 (PoundMan)</button>
+        <button onclick="showImage('luffy_g4_snakeman.png')">Luffy Gear 4 (SnakeMan)</button>
+        <button onclick="showImage('luffy_g4_tankman.png')">Luffy Gear 4 (TankMan)</button>
+        <button onclick="showImage('luffy_g5.png')">Luffy Gear 5</button>
+    </div>
+    <br>
+    <div class="image-container">
+        <img id="imageDisplay" src="images/luffy_base.png" alt="Luffy Base" />
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
