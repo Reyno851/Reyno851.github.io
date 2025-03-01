@@ -3,25 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luffy's Gear Showcase</title>
+    <title>Straw Hat Showcase</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <h1> Luffy's Gear Showcase </h1>
-    <div class="buttons">
-        <button onclick="showImage('luffy_base.png')">Luffy Base</button>
-        <button onclick="showImage('luffy_g2.png')">Luffy Gear 2</button>
-        <button onclick="showImage('luffy_g3.png')">Luffy Gear 3</button>
-        <button onclick="showImage('luffy_g4_poundman.jpg')">Luffy Gear 4 (PoundMan)</button>
-        <button onclick="showImage('luffy_g4_snakeman.png')">Luffy Gear 4 (SnakeMan)</button>
-        <button onclick="showImage('luffy_g4_tankman.png')">Luffy Gear 4 (TankMan)</button>
-        <button onclick="showImage('luffy_g5.png')">Luffy Gear 5</button>
-    </div>
-    <br>
-    <div class="image-container">
-        <img id="imageDisplay" src="images/luffy_base.png" alt="Luffy Base" />
-    </div>
+    <h1> Straw Hat Showcase </h1>
 
-    <script src="index.js"></script>
+    <div class="tab">
+        <button class="tablinks" onclick="selectStrawHat(event, 'Luffy')" id="defaultOpen">Luffy</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Zoro')">Zoro</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Nami')">Nami</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Usopp')">Usopp</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Sanji')">Sanji</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Chopper')">Chopper</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Robin')">Robin</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Franky')">Franky</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Brook')">Brook</button>
+        <button class="tablinks" onclick="selectStrawHat(event, 'Jinbe')">Jinbe</button>
+      </div>
+      
+      <!-- Luffy -->
+      <div id="Luffy" class="tabcontent">
+        <h3>Luffy showcase</h3>
+        <div class="buttons">
+            <button onclick="showImage('/luffy/luffy_base.png', 'luffyImageDisplay')">Luffy Base</button>
+            <button onclick="showImage('/luffy/luffy_g2.png', 'luffyImageDisplay')">Luffy Gear 2</button>
+            <button onclick="showImage('/luffy/luffy_g3.png', 'luffyImageDisplay')">Luffy Gear 3</button>
+            <button onclick="showImage('/luffy/luffy_g4_poundman.jpg', 'luffyImageDisplay')">Luffy Gear 4 (PoundMan)</button>
+            <button onclick="showImage('/luffy/luffy_g4_snakeman.png', 'luffyImageDisplay')">Luffy Gear 4 (SnakeMan)</button>
+            <button onclick="showImage('/luffy/luffy_g4_tankman.png', 'luffyImageDisplay')">Luffy Gear 4 (TankMan)</button>
+            <button onclick="showImage('/luffy/luffy_g5.png', 'luffyImageDisplay')">Luffy Gear 5</button>
+        </div>
+        <br>
+        <div class="image-container">
+            <img id="luffyImageDisplay" src="images/luffy/luffy_base.png" alt="Luffy Base" />
+        </div>
+      </div>
+    
+      <!-- Zoro -->
+      <div id="Zoro" class="tabcontent">
+        <h3>Zoro showcase</h3>
+        <div class="buttons">
+            <button onclick="showImage('/zoro/hiryu_kaen.jpeg', 'zoroImageDisplay')">Hiryu Kaen 飛竜火焔</button>
+            <button onclick="showImage('/zoro/36_caliber_phoenix.png', 'zoroImageDisplay')">36 Pound Phoenix 三十六煩悩鳳</button>
+            <button onclick="showImage('/zoro/shishisonson.png', 'zoroImageDisplay')">Ittoryu Iai: Shishi Sonson 一刀流 ｢居合｣ 獅子歌歌</button>
+            <button onclick="showImage('/zoro/yakkodori.gif', 'zoroImageDisplay')">Yakkodori 厄港鳥</button>
+            <button onclick="showImage('/zoro/daishinkan.png', 'zoroImageDisplay')">Daishinkan 大辰撼</button>
+            <button onclick="showImage('zoro/no_sword_style.png', 'zoroImageDisplay')">No Sword Style</button>
+            <button onclick="showImage('zoro/ashura.png', 'zoroImageDisplay')">Ashura</button>
+        </div>
+        <br>
+        <div class="image-container">
+            <img id="zoroImageDisplay" src="images/zoro/hiryu_kaen.jpeg" alt="Hiryu Kaen" />
+        </div>
+      </div>
+      
+      <!-- Nami  -->
+      <div id="Nami" class="tabcontent">
+        <h3>Nami Showcase</h3>
+        <div class="buttons">
+            <!-- <button onclick="showImage('/zoro/onigiri.png', 'zoroImageDisplay')">Attack</button> -->
+        </div>
+        <br>
+        <div class="image-container">
+            <!-- <img id="zoroImageDisplay" src="images/zoro/onigiri.png" alt="Onigiri" /> -->
+        </div>
+      </div>
+    </div>
+    <script src="index.js"> </script>
 </body>
 </html>
