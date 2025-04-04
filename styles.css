@@ -16,7 +16,7 @@ button {
     border: none;
     background-color: #23a1d1;
     color: white;
-    border-radius: 5px;
+    height: 45px;
 }
 
 button:hover {
